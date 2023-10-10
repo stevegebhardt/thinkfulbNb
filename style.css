@@ -49,13 +49,6 @@ main img {
 .item-double {
   flex: 2;
 }
-#about,
-#stay,
-#ideas,
-#host,
-footer {
-  width: 100%;
-}
 
 /* -------  Navigation ------- */
 
@@ -63,7 +56,7 @@ header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
-  width: 100%;
+  width: auto;
 }
 
 .logo {
@@ -153,6 +146,9 @@ form button {
 #ideas img {
   width: 100%;
 }
+.ideasCard {
+  width: 100%;
+}
 
 /* -------   Host  ------- */
 #host {
@@ -169,6 +165,7 @@ form button {
 
 footer {
   background-color: #ff385c;
+  width: auto;
 }
 
 footer p {
@@ -187,6 +184,7 @@ footer p {
   form {
     display: flex;
     align-items: center;
+    justify-content: space-around;
   }
   .formCard {
     display: flex;
@@ -207,11 +205,12 @@ footer p {
   #ideasDiv {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .ideasCard {
     display: flex;
     flex-direction: column;
-    width: 48%;
+    width: 47%;
     margin: 0 10px;
   }
   #host {
@@ -222,6 +221,9 @@ footer p {
     display: flex;
     flex-direction: column;
     width: 50%;
+  }
+  form button {
+    width: 200px;
   }
 }
 
@@ -239,8 +241,5 @@ footer p {
   form div input,
   form div select {
     width: 100px;
-  }
-  .ideasCard {
-    width: 46%;
   }
 }
