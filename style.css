@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -49,6 +49,13 @@ main img {
 .item-double {
   flex: 2;
 }
+#about,
+#stay,
+#ideas,
+#host,
+footer {
+  width: 100%;
+}
 
 /* -------  Navigation ------- */
 
@@ -56,6 +63,7 @@ header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
+  width: 100%;
 }
 
 .logo {
@@ -214,5 +222,25 @@ footer p {
     display: flex;
     flex-direction: column;
     width: 50%;
+  }
+}
+
+/* ----- Extra small screens ----- */
+@media all and (max-width: 390px) {
+  .logo {
+    font-size: 50px;
+  }
+
+  #stay {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 1000px) {
+  form div input,
+  form div select {
+    width: 100px;
+  }
+  .ideasCard {
+    width: 46%;
   }
 }
